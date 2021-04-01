@@ -20,9 +20,10 @@ io.on("connection", socket => {
         console.log(user)
     })
 
-    socket.on('drawing', (data) => {
+    socket.on('drawing', ({data,room_id}) => {
         const user = getUser(socket.id);
-        io.to(user.room).broadcast.emit('drawing', data);
+        console.log('drawing')
+        socket.broadcast.to(room_id).emit('drawingc',data);
     });
 
     socket.on('clear_whiteboard', (data) => {
