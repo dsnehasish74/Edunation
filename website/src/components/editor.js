@@ -24,15 +24,21 @@ import "ace-builds/src-noconflict/theme-xcode";
 
 const Editor = () => {
     return (<>
+
+        <div>
+            <ul></ul>
+        </div>
         <AceEditor
             placeholder="Placeholder Text"
-            mode="c_cpp"
+            mode="javascript"
             theme="monokai"
             name="blah2"
             fontSize={14}
             showPrintMargin={true}
             showGutter={true}
             highlightActiveLine={true}
+            height="60vh"
+            width="100%"
             value={`function onLoad(editor) {
   console.log("i've loaded");
     }`}

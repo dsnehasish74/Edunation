@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.sidebar_container{
+  background-color:white;
+}
+.slider_button{
+  position: fixed;
+  top: 50%;
+  right: 0;
+  height:60px;
+  cursor: pointer;
+  background-color:black;
+  color:white;
+}
+.close_button{
+  position: fixed;
+  top: 50%;
+  width: 60px;
+  z-index: 10000;
+  margin-left: -50px;
+}
