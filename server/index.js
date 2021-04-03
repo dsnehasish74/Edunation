@@ -32,10 +32,11 @@ io.on("connection", socket => {
     socket.on('joinRoom', ({ username, room }) => {
 
         const user = joinUser(socket.id, username,room);
-        socket.join(user.room);
-        socket.broadcast.to(user.room).emit('message', `${user.username} joined`);
-        console.log(user);
-
+        user.then(()=>{
+            socket.join(user.room);
+            socket.broadcast.to(user.room).emit('message', `${user.username} joined`);
+            console.log(user);
+        });        
     });
 
     socket.on('drawing', ({data,room_id}) => {
