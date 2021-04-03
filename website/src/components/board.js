@@ -12,7 +12,7 @@ const Board = (props) => {
                 setOperations(afterOperation);
             }}
             toolbarPlacement="top"
-            style={{overflow: 'hidden'}}
+            style={{overflow: 'hidden',width: '100%'}}
         />
     );
 }

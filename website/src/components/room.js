@@ -1,6 +1,7 @@
 import React,{useEffect,useRef} from 'react'
 import {useSocket} from '../socket/socketprovider';
 import Board from './board.js'
+import Editor from './editor.js'
 const Room = (props)=>{
     const socket = useSocket()
     const room_id=props.room_id;
@@ -20,6 +21,7 @@ const Room = (props)=>{
     return(
         <div>
             <Board id={room_id} />
+            <Editor/>
         </div>
     );
 }
