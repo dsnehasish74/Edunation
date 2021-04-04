@@ -6,6 +6,7 @@ import Board from './board.js'
 import Editor from './editor.js'
 import Browser from './browser.js'
 import Quize from './quize.js'
+import PdfViewer from './pdfviewer';
 const Room = (props) => {
     const [openPanel, setOpenPanel] = useState(false);
     const [navS, setNav] = useState(1);
@@ -30,6 +31,8 @@ const Room = (props) => {
             return <Editor/>
         }else if(navS==2){
             return <Browser/>
+        }else if(navS==3){
+            return<PdfViewer/>
         }else{
             return <Quize/>
         }
@@ -49,7 +52,8 @@ const Room = (props) => {
                         <ul>
                             <li  onClick={() => setNav(1)}>Edi</li>
                             <li  onClick={() => setNav(2)}>Brow</li>
-                            <li  onClick={() => setNav(3)}>Qui</li>
+                            <li  onClick={() => setNav(3)}>Pdf</li>
+                            <li  onClick={() => setNav(4)}>Qui</li>
                         </ul>
                     </nav>
                 {renderView()}
