@@ -2,8 +2,6 @@ import AceEditor from "react-ace";
 import "ace-builds/src-min-noconflict/ext-searchbox";
 import "ace-builds/src-noconflict/ext-language_tools";
 import React, { useState } from 'react';
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/mode-python";
 import "ace-builds/src-noconflict/mode-c_cpp";

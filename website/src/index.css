@@ -86,3 +86,11 @@ code {
 .pdf_container{
   height:100vh;
 }
+.row{
+  display:flex;
+
+}
+
+.col-md-6{
+  width:50%;
+}

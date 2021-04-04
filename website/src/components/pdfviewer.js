@@ -9,7 +9,7 @@ const PdfViewer = () => {
         <div className="pdf_container">
             <div className="pdf_submit">
             <input ref={inRef}  type="file" id="test" name="test" accept=".pdf,.doc"/>
-            <button onClick={viewPdf}>Clickme</button>
+            <button onClick={viewPdf}>View Pdf</button>
             </div>
             <embed
                 ref={pdfRef}
