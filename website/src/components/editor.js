@@ -95,7 +95,7 @@ function Editor(props)
             />
             </div>
             <div class="col-md-6">
-            <h5>Input</h5>
+            <h5>Output</h5>
             <AceEditor
                 placeholder="Output"
                 mode="javascript"
