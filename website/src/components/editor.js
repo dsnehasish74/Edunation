@@ -2,7 +2,6 @@ import AceEditor from "react-ace";
 import "ace-builds/src-min-noconflict/ext-searchbox";
 import "ace-builds/src-noconflict/ext-language_tools";
 import React, { useState } from 'react';
-import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/mode-python";
@@ -97,7 +96,7 @@ function Editor(props)
             />
             </div>
             <div class="col-md-6">
-            <h5>Input</h5>
+            <h5>Output</h5>
             <AceEditor
                 placeholder="Output"
                 mode="javascript"
