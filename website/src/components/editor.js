@@ -25,7 +25,6 @@ function Editor(props)
         console.log(text);
         console.log(lang);
         console.log(inp);
-
     }
     function handleChange(e)
     {
