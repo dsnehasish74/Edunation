@@ -1,0 +1,91 @@
+body {
+      margin: 0;
+      width: 100%;
+      overflow-x: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    code {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+    }
+    
+    /* Navbar */
+    .nav {
+      background-color: transparent;
+    }
+    
+    .brand-logo {
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 100px;
+    }
+    
+    .btn-nav {
+      border: purple;
+      border-style: solid;
+      border-radius: 5px;
+      border-width: 1px;
+      font-weight: 400;
+    }
+    
+    .font {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+    }
+    
+    .title {
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .para {
+      font-family: "Times New Roman", Times, serif;
+    }
+    
+    .bg {
+      border-radius: 28px;
+    }
+    
+    .i-line {
+      font-weight: 100;
+    }
+    
+    .btn-header {
+      font-weight: 700;
+    }
+    
+    /* about  */
+    .about {
+      margin-top: 150px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    
+    /* footer  */
+    
+    .input-field label {
+      color: #000;
+      font-weight: 400;
+    }
+    
+    .one {
+      margin-top: 50px;
+    }
+    
+    .card {
+      border-radius: 5px;
+    }
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+      only screen and (-o-min-device-pixel-ratio: 3/2),
+      only screen and (min--moz-device-pixel-ratio: 1.5),
+      only screen and (min-device-pixel-ratio: 1.5) {
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    }

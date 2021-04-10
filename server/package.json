@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/storage": "^5.8.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^3.6.5",
     "mongoose": "^5.12.3",

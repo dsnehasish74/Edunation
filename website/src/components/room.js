@@ -6,38 +6,49 @@ import Board from './board.js'
 import Editor from './editor.js'
 import Browser from './browser.js'
 import Quize from './quize.js'
+import PdfViewer from './pdfviewer';
+import {useUser} from "../UserProvider/UserProvider.js"
+
 const Room = (props) => {
     const [openPanel, setOpenPanel] = useState(false);
     const [navS, setNav] = useState(1);
     const socket = useSocket()
     const room_id = props.room_id;
+    const user_name = useUser();
+
     useEffect(() => {
         if (socket == null) return
         console.log(socket);
-        socket.emit('joinRoom', { username: "demo", room: room_id });
+        socket.emit('joinRoom', { username: JSON.parse(user_name).email, room: room_id });
     }, [socket])
+
     useEffect(() => {
         if (socket == null) return
-        socket.on('message', (msg) => {
+        socket.on('createQuize', (msg) => {
+            console.log("Inside socket.on");
             console.log(msg);
         })
+        console.log("Outside socket.on");
 
         return () => socket.off('message');
     }, [socket])
 
+    
     const renderView = ()=>{
         if(navS==1){
             return <Editor/>
         }else if(navS==2){
             return <Browser/>
+        }else if(navS==3){
+            return<PdfViewer/>
         }else{
-            return <Quize/>
+            return <Quize room_id = {room_id}/>
         }
     }
     return (
         <div>
             <Board id={room_id} />
-            <button className="slider_button" onClick={() => setOpenPanel(true)}>Open</button>
+            <button className="slider_button" onClick={() => setOpenPanel(true)}><i class="fas fa-chevron-left fa-3x"></i></button>
             <SlidingPanel
                 type={'right'}
                 isOpen={openPanel}
@@ -45,16 +56,17 @@ const Room = (props) => {
                 noBackdrop ={true}
             >
                 <div className="sidebar_container">
-                    <nav className="nav_right">
+                    <div className="nav_right">
                         <ul>
-                            <li  onClick={() => setNav(1)}>Edi</li>
-                            <li  onClick={() => setNav(2)}>Brow</li>
-                            <li  onClick={() => setNav(3)}>Qui</li>
+                            <li  onClick={() => setNav(1)}><i class="fas fa-code fa-3x"></i></li>
+                            <li  onClick={() => setNav(2)}><i class="fab fa-edge fa-3x"></i></li>
+                            <li  onClick={() => setNav(3)}><i class="fas fa-file-pdf fa-3x"></i></li>
+                            <li  onClick={() => setNav(4)}><i class="fas fa-user-tag fa-3x"></i></li>
                         </ul>
-                    </nav>
+                    </div>
                 {renderView()}
                 </div>
-                <button className="close_button" onClick={() => setOpenPanel(false)}>close</button>
+                <button className="close_button" onClick={() => setOpenPanel(false)}><i class="fas fa-times-circle"></i></button>
             </SlidingPanel>
         </div>
     );

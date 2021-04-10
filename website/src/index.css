@@ -13,6 +13,8 @@ code {
 }
 .sidebar_container{
   background-color:white;
+  height: 100vh;
+  background-color: #010409;
 }
 .slider_button{
   position: fixed;
@@ -32,19 +34,19 @@ code {
 }
 .nav_right{
   position: fixed;
-  top: 50%;
-  margin-left: -50px;
+  top: 30%;
+  margin-left: -80px;
   z-index: 1000;
 }
 
 .nav_right ul{
-  background-color:black;
+  background-color:#183153;
   color:white;
   list-style: none;
   padding-left: 20px;
 }
 .nav_right ul li{
-  padding:10px 5px 10px 0px;
+  padding:20px 5px 20px 0px;
   cursor: pointer;
 }
 .browser{
@@ -73,4 +75,43 @@ code {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color:white;
   opacity: 1; /* Firefox */
+}
+.pdf_submit{
+  display:flex;
+  height:40px;
+  align-items:center;
+  justify-content: center;
+  background-color:#183153;
+  color: white;
+}
+.pdf_container{
+  height:100vh;
+}
+.row{
+  display:flex;
+
+}
+
+.col-md-6{
+  width:50%;
+}
+.run{
+  margin-top: 10px;
+}
+
+.option_container{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.options{
+  margin: 5px 10px 0px 10px;
+}
+.increase_font{
+  font-weight: bold;
+}
+.decrease_font{
+  font-weight: bold;
 }

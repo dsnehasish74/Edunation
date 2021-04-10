@@ -2,23 +2,17 @@ const mongoose=require("mongoose");
 
 const userSchema=new mongoose.Schema({
 
-    username:{
+    email:{
         type:String,
         required:true
     },
 
-    room:{
-        type:String,
-        required:true
-    },
-
-    id:{
-        type:String,
-        required:true
+    roomList:{
+        type:[]
     },
 
     _id:{
-        type:String,
+        type:String
     }
 });
 
