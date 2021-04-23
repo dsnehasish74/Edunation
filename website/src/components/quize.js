@@ -28,18 +28,18 @@ const Quize=()=>{
 
 
     return(
-        <div>
-            <input type="text" onChange={e=>setQuestion(e.target.value)}/>
+        <div className="quize_container">
+            <input className="input_quize" type="text" onChange={e=>setQuestion(e.target.value)}/>
 
-            <input type="text" onChange={e=>setOptionOne(e.target.value)}/>
+            <input className="input_quize" type="text" onChange={e=>setOptionOne(e.target.value)}/>
 
-            <input type="text" onChange={e=>setOptionTwo(e.target.value)}/>
+            <input className="input_quize" type="text" onChange={e=>setOptionTwo(e.target.value)}/>
 
-            <input type="text" onChange={e=>setOptionThree(e.target.value)}/>
+            <input className="input_quize" type="text" onChange={e=>setOptionThree(e.target.value)}/>
 
-            <input type="text" onChange={e=>setOptionFour(e.target.value)}/>
+            <input className="input_quize" type="text" onChange={e=>setOptionFour(e.target.value)}/>
 
-            <button onClick={submitQuize}>SUBMIT</button>
+            <button className="btn btn-primary quize_submit" onClick={submitQuize}>SUBMIT</button>
 
         </div>
     );

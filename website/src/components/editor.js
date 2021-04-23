@@ -54,7 +54,7 @@ function Editor(props)
         <button className="increase_font options btn btn-primary" onClick={e=>setFont(pv=>pv+1)}>+</button>
         <button className="decrease_font options btn btn-primary" onClick={e=>setFont(pv=>pv-1)}>-</button>
         </div>
-        <h5>Source Code</h5>
+        <h5 className="editor_text">Source Code</h5>
         <AceEditor
             placeholder="Source Code"
             mode={lang}
@@ -82,7 +82,7 @@ function Editor(props)
         </button>
         <div class="row">
           <div class="col-md-6">
-            <h5>Input</h5>
+            <h5 className="editor_text">Input</h5>
             <AceEditor
                 placeholder="Input"
                 mode="javascript"
@@ -107,7 +107,7 @@ function Editor(props)
             />
             </div>
             <div class="col-md-6">
-            <h5>Output</h5>
+            <h5 className="editor_text">Output</h5>
             <AceEditor
                 placeholder="Output"
                 mode="javascript"

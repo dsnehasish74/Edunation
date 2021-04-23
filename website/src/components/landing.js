@@ -1,22 +1,20 @@
 import React from 'react'
-
-import './landing.css'
-import NavbarComponent from "./LandComponents/NavbarComponent";
-import HeaderComponent from "./LandComponents/HeaderComponent";
-import DetailComponent from "./LandComponents/DetailComponent";
-import IconComponent from "./LandComponents/IconComponent";
-import AboutComponent from "./LandComponents/AboutComponent";
-import FooterComponent from "./LandComponents/FooterComponent";
-
+import HeroImage from './asset/hero.svg'
+import {Link} from 'react-router-dom';
  const Landing = () => {
     return (
-        <div>
-            <NavbarComponent />
-            <HeaderComponent />
-            <DetailComponent />
-            <IconComponent />
-            <AboutComponent />
-            <FooterComponent />
+        <div className="main_container">
+        <div className="Hero-container">
+
+            <div className="hero-text">
+                <h1 className="company_name">Edunation</h1>
+                <h1>Re-imagine online Education. Make your online classes more easy , fun and interactive </h1>
+                <Link to="/signin"><button className="hero-button">Get started</button></Link>
+            </div>
+            <div>
+                <img className="hero-image" src={HeroImage} alt="hero"></img>
+            </div>
+        </div>
         </div>
     )
 }
