@@ -60,8 +60,11 @@ const Room = (props) => {
     return (
         <div>
             <Board id={room_id} />
-            {room_id}
-            <button className="slider_button" onClick={() => setOpenPanel(true)}><i class="fas fa-chevron-left fa-3x"></i></button>
+            <div className="footer">
+                <div class="copy_button"><input value={room_id} type="text"/><button>Copy</button></div>
+                <button className="nav_button">leave</button>
+                <button className="nav_button" onClick={() => setOpenPanel(true)}><i class="fas fa-chevron-left fa-3x"></i></button>
+            </div>
             <SlidingPanel
                 type={'right'}
                 isOpen={openPanel}

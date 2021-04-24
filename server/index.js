@@ -38,7 +38,7 @@ io.on("connection", socket => {
             socket.join(room);
             socket.broadcast.to(room).emit('message', `${username} joined`);
             // console.log(user);
-        });        
+        });
     });
 
     socket.on('drawing', ({data,room_id}) => {
@@ -59,8 +59,8 @@ io.on("connection", socket => {
         //     socket.broadcast.to(room_id).emit('drawing',data);
         // });    
         console.log("createQuize event is fired !..");
-        console.log(question+"\n"+option1+"\n"+option2+"\n"+option3+"\n"+option4);
-        socket.broadcast.to(room_id).emit('createQuize',question,option1,option2,option3,option4);
+        console.log(question+"\n"+option1+"\n"+option2+"\n"+option3+"\n"+option4+"\n"+room_id+"\n");
+        socket.broadcast.to(room_id).emit('Quize',{question,option1,option2,option3,option4,room_id});
 
     });
 

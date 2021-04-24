@@ -208,7 +208,7 @@ code {
 }
 .logout{
   padding: 5px 10px;
-  background-color: red;
+  background-color: ;
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
@@ -235,6 +235,20 @@ code {
 .id_input{
   margin-top:20px;
   padding: 10px;
+}
+.footer{
+  position:fixed;
+  z-index:1000;
+  bottom:0;
+  background-color:#00796b;
+  width:100vw;
+  display:flex;
+  padding: 10px 50px;
+  justify-content:space-between;
+
+}
+.nav_button{
+  border-radius: 100%;
 }
 @media(max-width: 1100px){
   .Hero-container{
