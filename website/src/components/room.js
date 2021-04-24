@@ -24,13 +24,25 @@ const Room = (props) => {
 
     useEffect(() => {
         if (socket == null) return
-        socket.on('createQuize', (msg) => {
+        socket.on('message', (msg) => {
             console.log("Inside socket.on");
             console.log(msg);
         })
         console.log("Outside socket.on");
 
         return () => socket.off('message');
+    }, [socket])
+
+    useEffect(() => {
+        console.log(socket);
+        if (socket == null) return;
+        socket.on('Quize', (msg) => {
+            console.log("Quiuze.js----Inside socket.on");
+            console.log(msg);
+        })
+        console.log("Outside socket.on");
+
+        return () => socket.off('Quize');
     }, [socket])
 
     
@@ -42,12 +54,13 @@ const Room = (props) => {
         }else if(navS==3){
             return<PdfViewer/>
         }else{
-            return <Quize room_id = {room_id}/>
+            return <Quize room_id={room_id}/>
         }
     }
     return (
         <div>
             <Board id={room_id} />
+            {room_id}
             <button className="slider_button" onClick={() => setOpenPanel(true)}><i class="fas fa-chevron-left fa-3x"></i></button>
             <SlidingPanel
                 type={'right'}
