@@ -30,10 +30,6 @@ In recent years, the world has changed dramatically, with online teaching creati
 |---|---|
 |![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(12).png)|<img src="https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(13).png"/>|
 |---|---|
-![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(10).png)
-![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(11).png)
-![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(12).png)
-![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(13).png)
 
 ## FURTHER AIMS🔥
 
