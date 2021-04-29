@@ -35,7 +35,7 @@ In recent years, the world has changed dramatically, with online teaching creati
 
 We further look to incorporate the following features in our project so that the users don’t need to use any other third-party app and our main aim of bringing things under one roof is fulfilled:-
 
-Video conferencing 
-Chat System 
-Automatic attendance system
+- Video conferencing 
+- Chat System 
+- Automatic attendance system
 
