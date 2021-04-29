@@ -25,11 +25,11 @@ In recent years, the world has changed dramatically, with online teaching creati
 
 ### Demo Pictures:
 |![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(8).png)|<img src="https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(9).png"/>|
-|---|---|
+|Home Page|Code Editor|
 |![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(10).png)|<img src="https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(11).png"/>|
-|---|---|
+|Bowser|Pdf viewer|
 |![Edunation](https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(12).png)|<img src="https://github.com/dsnehasish74/Edunation/blob/main/assets/Screenshot%20(13).png"/>|
-|---|---|
+|Quize|White Board|
 
 ## FURTHER AIMS🔥
 
